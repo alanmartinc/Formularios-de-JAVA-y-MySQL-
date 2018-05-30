@@ -6,6 +6,7 @@
 package Vista;
 
 import Entidades.Helado;
+import Entidades.JLabelCellenderer;
 import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.table.DefaultTableModel;
@@ -57,7 +58,7 @@ public class frmListadoHelados extends javax.swing.JInternalFrame {
             modelo.addRow(columnas);
         }
         
-
+          modelo.getColumnModel().getColumn(1).setCellRenderer(new JLabelCellenderer("/home/usuario/Downloads/22.png"));
     }
 
     /**
